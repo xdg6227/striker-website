@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1D1E28;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A1B24;
+}
+
+/* Main Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1D1E28;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Back to Top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #1A1B24;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px;
+  background-color: #1A1B24 !important;
+}
+
+.nav-link:hover {
+  color: #7289da !important;
+}
+
+/* Header */
+.heading {
+  padding: 160px 30px !important;
+  text-align: center;
+}
+
+.btn-heading {
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600 ;
+  text-transform: uppercase;
+  background-color: #2C2F33;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.btn-heading:hover {
+  color: #fff;
+  background-color: #7289da;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 0px 30px !important;
+}
+
+/* Commands */
+.commands {
+  text-align: center;
+  padding: 0px 30px !important;
+}
+
+a, a:hover {
+  color: #7289da;
+  text-decoration: none;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1A1B24 !important;
+}

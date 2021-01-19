@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../public/ejs/head'); %>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn"><i class="fas fa-caret-up"></i></button>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <!-- <img src="../public/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-top"> -->
+        Striker
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="/invite">Invite</a>
+          <a class="nav-link active" href="/support">Support Server</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="heading" id="heading">
+    <h1>It's time to use Bot in your server.</h1>
+    <p>Bot is a multi-purpose bot ready to skill up and boost up your Discord server<br />Also
+      features auto-moderation, administration, music and much more!</p>
+    <a class="btn-heading" href="#about" role="button">Learn More</a>
+    <a class="btn-heading" href="/invite" target="_blank" role="button">Invite Now! <i
+        class="fas fa-external-link-alt"></i></a>
+  </div>
+
+  <div class="about" id="about">
+    <h2>About Striker</h2>
+
+    <a class="btn-heading"
+      href="https://docs.google.com/spreadsheets/d/176t6DYw9e0lK03P3EXim3ExH5AxUmsJEcAWWKrEFxCM/edit" target="_blank"
+      role="button">Google Sheets <i class="fas fa-external-link-alt"></i></a>
+  </div>
+  <br />
+  <div class="commands" id="commands">
+    <h2>Commands</h2>
+    <p>This is a list of commands! Please run <code>s.help</code> for more updated commands. Click <a href="#footer">here</a> to skip the commands.</p>
+    <br />
+    <%- include('../public/ejs/commands'); %>
+  </div>
+  <br />
+  <div class="footer" id="footer">
+    <p>Copyright © xdg6227 - 2020</p>
+  </div>
+
+
+  <script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
